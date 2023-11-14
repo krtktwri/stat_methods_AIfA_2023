@@ -23,7 +23,7 @@ def sphere(x, y, z):
     ax.set_xlabel('X values')
     ax.set_ylabel('Y values')
     ax.set_zlabel('Z values')
-    ax.set_aspect('equal')
+    ax.set_aspect('auto')
 
     plt.show()
 
@@ -48,15 +48,15 @@ def projection(x, y, z):
 
     ax1.scatter(x, y, s = 2, c = 'teal', alpha = 0.7)
     ax1.set_title('XY Plane')
-    ax1.set_aspect('equal')
+    ax1.set_aspect('auto')
 
     ax2.scatter(y, z, s = 2, c = 'crimson', alpha = 0.7)
     ax2.set_title('YZ Plane')
-    ax2.set_aspect('equal')
+    ax2.set_aspect('auto')
 
     ax3.scatter(z, x, s = 2, c = '#ff4500', alpha = 0.5)
     ax3.set_title('ZX Plane')
-    ax3.set_aspect('equal')
+    ax3.set_aspect('auto')
 
     plt.tight_layout()
     plt.show()
